@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import arxiv
 import json
 import os
@@ -206,5 +205,4 @@ def extract_info(paper_id: str) -> str:
 
 if __name__ == "__main__":
     # Initialize and run the server
->>>>>>> b66b329543a5cd20a5b8bda3e1da473fd140f875
     mcp.run(transport='stdio')
