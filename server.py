@@ -67,7 +67,6 @@ def search_papers(topic: str, max_results: int = 5) -> List[str]:
 
     return paper_ids
 
-
 @mcp.tool()
 def extract_info(paper_id: str) -> str:
     """
@@ -95,8 +94,6 @@ def extract_info(paper_id: str) -> str:
                     continue
     
     return f"There's no saved information related to paper {paper_id}."
-
-
 
 if __name__ == "__main__":
     # Initialize and run the server
