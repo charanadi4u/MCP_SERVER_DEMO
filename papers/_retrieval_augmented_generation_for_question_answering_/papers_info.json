@@ -1,0 +1,62 @@
+{
+  "2404.14464v1": {
+    "title": "Tree of Reviews: A Tree-based Dynamic Iterative Retrieval Framework for Multi-hop Question Answering",
+    "authors": [
+      "Li Jiapeng",
+      "Liu Runze",
+      "Li Yabo",
+      "Zhou Tong",
+      "Li Mingling",
+      "Chen Xiang"
+    ],
+    "summary": "Multi-hop question answering is a knowledge-intensive complex problem. Large Language Models (LLMs) use their Chain of Thoughts (CoT) capability to reason complex problems step by step, and retrieval-augmentation can effectively alleviate factual errors caused by outdated and unknown knowledge in LLMs. Recent works have introduced retrieval-augmentation in the CoT reasoning to solve multi-hop question answering. However, these chain methods have the following problems: 1) Retrieved irrelevant paragraphs may mislead the reasoning; 2) An error in the chain structure may lead to a cascade of errors.\n  In this paper, we propose a dynamic retrieval framework called Tree of Reviews (ToR), where the root node is the question, and the other nodes are paragraphs from retrieval, extending different reasoning paths from the root node to other nodes. Our framework dynamically decides to initiate a new search, reject, or accept based on the paragraphs on the reasoning paths. Compared to related work, we introduce a tree structure to handle each retrieved paragraph separately, alleviating the misleading effect of irrelevant paragraphs on the reasoning path; the diversity of reasoning path extension reduces the impact of a single reasoning error on the whole. We conducted experiments on three different multi-hop question answering datasets. The results show that compared to the baseline methods, ToR achieves state-of-the-art performance in both retrieval and response generation. In addition, we propose two tree-based search optimization strategies, pruning and effective expansion, to reduce time overhead and increase the diversity of path extension. We will release our code.",
+    "pdf_url": "https://arxiv.org/pdf/2404.14464v1",
+    "published": "2024-04-22"
+  },
+  "2410.14167v1": {
+    "title": "Optimizing Retrieval-Augmented Generation with Elasticsearch for Enhanced Question-Answering Systems",
+    "authors": [
+      "Jiajing Chen",
+      "Runyuan Bao",
+      "Hongye Zheng",
+      "Zhen Qi",
+      "Jianjun Wei",
+      "Jiacheng Hu"
+    ],
+    "summary": "This study aims to improve the accuracy and quality of large-scale language models (LLMs) in answering questions by integrating Elasticsearch into the Retrieval Augmented Generation (RAG) framework. The experiment uses the Stanford Question Answering Dataset (SQuAD) version 2.0 as the test dataset and compares the performance of different retrieval methods, including traditional methods based on keyword matching or semantic similarity calculation, BM25-RAG and TF-IDF- RAG, and the newly proposed ES-RAG scheme. The results show that ES-RAG not only has obvious advantages in retrieval efficiency but also performs well in key indicators such as accuracy, which is 0.51 percentage points higher than TF-IDF-RAG. In addition, Elasticsearch's powerful search capabilities and rich configuration options enable the entire question-answering system to better handle complex queries and provide more flexible and efficient responses based on the diverse needs of users. Future research directions can further explore how to optimize the interaction mechanism between Elasticsearch and LLM, such as introducing higher-level semantic understanding and context-awareness capabilities, to achieve a more intelligent and humanized question-answering experience.",
+    "pdf_url": "https://arxiv.org/pdf/2410.14167v1",
+    "published": "2024-10-18"
+  },
+  "2504.08893v1": {
+    "title": "Knowledge Graph-extended Retrieval Augmented Generation for Question Answering",
+    "authors": [
+      "Jasper Linders",
+      "Jakub M. Tomczak"
+    ],
+    "summary": "Large Language Models (LLMs) and Knowledge Graphs (KGs) offer a promising approach to robust and explainable Question Answering (QA). While LLMs excel at natural language understanding, they suffer from knowledge gaps and hallucinations. KGs provide structured knowledge but lack natural language interaction. Ideally, an AI system should be both robust to missing facts as well as easy to communicate with. This paper proposes such a system that integrates LLMs and KGs without requiring training, ensuring adaptability across different KGs with minimal human effort. The resulting approach can be classified as a specific form of a Retrieval Augmented Generation (RAG) with a KG, thus, it is dubbed Knowledge Graph-extended Retrieval Augmented Generation (KG-RAG). It includes a question decomposition module to enhance multi-hop information retrieval and answer explainability. Using In-Context Learning (ICL) and Chain-of-Thought (CoT) prompting, it generates explicit reasoning chains processed separately to improve truthfulness. Experiments on the MetaQA benchmark show increased accuracy for multi-hop questions, though with a slight trade-off in single-hop performance compared to LLM with KG baselines. These findings demonstrate KG-RAG's potential to improve transparency in QA by bridging unstructured language understanding with structured knowledge retrieval.",
+    "pdf_url": "https://arxiv.org/pdf/2504.08893v1",
+    "published": "2025-04-11"
+  },
+  "2507.23334v1": {
+    "title": "MUST-RAG: MUSical Text Question Answering with Retrieval Augmented Generation",
+    "authors": [
+      "Daeyong Kwon",
+      "SeungHeon Doh",
+      "Juhan Nam"
+    ],
+    "summary": "Recent advancements in Large language models (LLMs) have demonstrated remarkable capabilities across diverse domains. While they exhibit strong zero-shot performance on various tasks, LLMs' effectiveness in music-related applications remains limited due to the relatively small proportion of music-specific knowledge in their training data. To address this limitation, we propose MusT-RAG, a comprehensive framework based on Retrieval Augmented Generation (RAG) to adapt general-purpose LLMs for text-only music question answering (MQA) tasks. RAG is a technique that provides external knowledge to LLMs by retrieving relevant context information when generating answers to questions. To optimize RAG for the music domain, we (1) propose MusWikiDB, a music-specialized vector database for the retrieval stage, and (2) utilizes context information during both inference and fine-tuning processes to effectively transform general-purpose LLMs into music-specific models. Our experiment demonstrates that MusT-RAG significantly outperforms traditional fine-tuning approaches in enhancing LLMs' music domain adaptation capabilities, showing consistent improvements across both in-domain and out-of-domain MQA benchmarks. Additionally, our MusWikiDB proves substantially more effective than general Wikipedia corpora, delivering superior performance and computational efficiency.",
+    "pdf_url": "https://arxiv.org/pdf/2507.23334v1",
+    "published": "2025-07-31"
+  },
+  "2505.07917v1": {
+    "title": "Efficient and Reproducible Biomedical Question Answering using Retrieval Augmented Generation",
+    "authors": [
+      "Linus Stuhlmann",
+      "Michael Alexander Saxer",
+      "Jonathan F\u00fcrst"
+    ],
+    "summary": "Biomedical question-answering (QA) systems require effective retrieval and generation components to ensure accuracy, efficiency, and scalability. This study systematically examines a Retrieval-Augmented Generation (RAG) system for biomedical QA, evaluating retrieval strategies and response time trade-offs. We first assess state-of-the-art retrieval methods, including BM25, BioBERT, MedCPT, and a hybrid approach, alongside common data stores such as Elasticsearch, MongoDB, and FAISS, on a ~10% subset of PubMed (2.4M documents) to measure indexing efficiency, retrieval latency, and retriever performance in the end-to-end RAG system. Based on these insights, we deploy the final RAG system on the full 24M PubMed corpus, comparing different retrievers' impact on overall performance. Evaluations of the retrieval depth show that retrieving 50 documents with BM25 before reranking with MedCPT optimally balances accuracy (0.90), recall (0.90), and response time (1.91s). BM25 retrieval time remains stable (82ms), while MedCPT incurs the main computational cost. These results highlight previously not well-known trade-offs in retrieval depth, efficiency, and scalability for biomedical QA. With open-source code, the system is fully reproducible and extensible.",
+    "pdf_url": "https://arxiv.org/pdf/2505.07917v1",
+    "published": "2025-05-12"
+  }
+}
